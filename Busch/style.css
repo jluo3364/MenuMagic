@@ -1,0 +1,524 @@
+.busch {
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.busch .div {
+  background-color: #e2e2e2;
+  width: 1280px;
+  height: 832px;
+  position: relative;
+}
+
+.busch .overlap {
+  position: absolute;
+  width: 595px;
+  height: 220px;
+  top: 407px;
+  left: 345px;
+}
+
+.busch .group {
+  width: 286px;
+  top: 0;
+  left: 309px;
+  background-image: url(./img/square-6.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  height: 220px;
+}
+
+.busch .pizza {
+  position: absolute;
+  width: 156px;
+  height: 14px;
+  top: 187px;
+  left: 202px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-gray);
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .overlap-wrapper {
+  width: 288px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 220px;
+}
+
+.busch .overlap-group {
+  position: relative;
+  width: 286px;
+  height: 220px;
+  background-image: url(./img/square-5.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.busch .text-wrapper {
+  position: absolute;
+  width: 203px;
+  height: 14px;
+  top: 192px;
+  left: 25px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .overlap-2 {
+  position: absolute;
+  width: 290px;
+  height: 43px;
+  top: 101px;
+  left: 35px;
+}
+
+.busch .rectangle {
+  position: absolute;
+  width: 255px;
+  height: 43px;
+  top: 0;
+  left: 0;
+}
+
+.busch .text-wrapper-2 {
+  position: absolute;
+  width: 275px;
+  height: 30px;
+  top: 9px;
+  left: 15px;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-gray);
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.busch .div-wrapper {
+  position: absolute;
+  width: 208px;
+  height: 51px;
+  top: 654px;
+  left: 31px;
+  background-image: url(./img/rectangle-20.svg);
+  background-size: 100% 100%;
+}
+
+.busch .text-wrapper-3 {
+  position: absolute;
+  width: 124px;
+  height: 30px;
+  top: 14px;
+  left: 13px;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-gray);
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.busch .overlap-3 {
+  position: absolute;
+  width: 286px;
+  height: 220px;
+  top: 172px;
+  left: 35px;
+  background-image: url(./img/square-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.busch .text-wrapper-4 {
+  position: absolute;
+  width: 156px;
+  height: 14px;
+  top: 192px;
+  left: 23px;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .square {
+  width: 236px;
+  height: 109px;
+  top: 723px;
+  left: 27px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.busch .overlap-4 {
+  position: absolute;
+  width: 286px;
+  height: 220px;
+  top: 407px;
+  left: 35px;
+  background-image: url(./img/square-4.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.busch .image {
+  position: absolute;
+  width: 34px;
+  height: 23px;
+  top: 124px;
+  left: 209px;
+}
+
+.busch .text-wrapper-5 {
+  position: absolute;
+  width: 156px;
+  height: 14px;
+  top: 186px;
+  left: 21px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .img {
+  width: 286px;
+  height: 220px;
+  top: 172px;
+  left: 345px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.busch .square-2 {
+  width: 236px;
+  height: 109px;
+  top: 723px;
+  left: 276px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.busch .square-3 {
+  width: 236px;
+  height: 109px;
+  top: 723px;
+  left: 525px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.busch .overlap-5 {
+  position: absolute;
+  width: 1280px;
+  height: 72px;
+  top: 0;
+  left: 0;
+  background-color: #f00000b2;
+  box-shadow: 0px 2px 8px #26145a;
+}
+
+.busch .overlap-6 {
+  position: absolute;
+  width: 625px;
+  height: 15px;
+  top: 36px;
+  left: 329px;
+}
+
+.busch .title {
+  position: absolute;
+  width: 79px;
+  height: 14px;
+  top: 0;
+  left: 118px;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .navbar {
+  position: absolute;
+  width: 625px;
+  height: 14px;
+  top: 1px;
+  left: 0;
+}
+
+.busch .title-2 {
+  position: absolute;
+  width: 68px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .title-3 {
+  width: 86px;
+  left: 531px;
+  position: absolute;
+  height: 14px;
+  top: 0;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .title-4 {
+  width: 116px;
+  left: 365px;
+  position: absolute;
+  height: 14px;
+  top: 0;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .title-5 {
+  width: 68px;
+  left: 247px;
+  position: absolute;
+  height: 14px;
+  top: 0;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .overlap-7 {
+  position: absolute;
+  width: 290px;
+  height: 46px;
+  top: 13px;
+  left: 31px;
+}
+
+.busch .logo {
+  position: absolute;
+  width: 54px;
+  height: 46px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/image-1.png);
+  background-size: 100% 100%;
+}
+
+.busch .image-2 {
+  position: absolute;
+  width: 38px;
+  height: 40px;
+  top: 6px;
+  left: 0;
+  object-fit: cover;
+}
+
+.busch .text-wrapper-6 {
+  position: absolute;
+  width: 254px;
+  height: 37px;
+  top: 5px;
+  left: 36px;
+  font-family: "Rancho", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-color);
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.busch .searchbar {
+  position: absolute;
+  width: 183px;
+  height: 36px;
+  top: 19px;
+  left: 1013px;
+  background-color: #e2e2e2;
+  border-radius: 20px;
+}
+
+.busch .image-3 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  left: 7px;
+  object-fit: cover;
+}
+
+.busch .image-4 {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: 13px;
+  left: 1211px;
+  object-fit: cover;
+}
+
+.busch .overlap-group-wrapper {
+  width: 288px;
+  top: 172px;
+  left: 655px;
+  position: absolute;
+  height: 220px;
+}
+
+.busch .swordfish {
+  position: absolute;
+  width: 203px;
+  height: 14px;
+  top: 195px;
+  left: 18px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Khula", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-color);
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.busch .overlap-8 {
+  position: absolute;
+  width: 190px;
+  height: 38px;
+  top: 107px;
+  left: 751px;
+}
+
+.busch .date-dropdown {
+  width: 188px;
+  top: 1px;
+  left: 2px;
+  background-color: #b20000d4;
+  border-radius: 5px;
+  position: absolute;
+  height: 37px;
+}
+
+.busch .text-wrapper-7 {
+  width: 154px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-gray);
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  height: 37px;
+}
+
+.busch .image-5 {
+  position: absolute;
+  width: 35px;
+  height: 37px;
+  top: 0;
+  left: 155px;
+  object-fit: cover;
+}
