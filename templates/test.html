@@ -1,0 +1,38 @@
+{% extends "layout.html"%}
+{%block head%}
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Listee</title>
+    <script src="../static/script.js" defer></script>
+{%endblock%}
+{%block body%}
+    
+        <form action="/newlist" method="post">
+            <section>
+            <input autocomplete = "off"  name = "name" type = "text">
+            <button type = "submit">New List</button> </section>
+        </form>
+        <br>
+        {%if lists %}
+            <h2>
+                Lists
+            </h2>
+            </ul>
+                {% for l in lists %}
+                    <!-- l is a tuple: (id, listname) -->
+                    <div id = "{{ l[1] }}">
+                    <li> 
+                        
+                        <input type="checkbox" id = "chbox" value = "{{ l[0] }}">
+                        
+                        <label for ="{{ l[0] }}" id = "label{{l[0]}}"> <a class = "list" href="/editlist/{{ l[1] }}"> {{ l[1]}} </a>
+                        </label>
+                        <img src="../static/pencil-square.svg" alt="edit">
+                    </li>
+                </div>
+                {% endfor %}
+                <br>
+                <button id="to_delete">Delete</button>
+                <script src="/static/delete_lists.js"></script>
+            </ul>
+        {% endif %}
+{%endblock%}
