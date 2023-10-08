@@ -1,7 +1,18 @@
-var fooditems = document.querySelector(".food .item");
+const fooditems = document.querySelectorAll('.food .item');
+fooditems.forEach((fooditem) => {
+    fooditem.addEventListener('mouseover', function (event) {
+        var foodfront = fooditem.querySelector('.front');
+        var foodback = fooditem.querySelector('.back');
+        foodback.classList.remove('hidden');
+        foodfront.classList.add('hidden');
+    });
+    fooditem.addEventListener('mouseleave', function (event) {
+        var foodfront = fooditem.querySelector(".front");
+        var foodback = fooditem.querySelector(".back");
+        foodback.classList.add('hidden');
+        foodfront.classList.remove('hidden');
+    });
+  });
 
-var elem = document.getElementsByClassName()
-elem.onchange = function(){
-    var hiddenDiv = document.getElementById("showMe");
-    hiddenDiv.style.display = (this.value == "") ? "none":"block";
-};
+
+ 
