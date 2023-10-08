@@ -11,7 +11,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-              <img src="assets/images/logo5.0.png" alt="">
+              <img src="../static/images/logo5.0.png" alt="">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Search End ***** -->
@@ -42,7 +42,7 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="container">
+  <div class="container" >
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
@@ -65,14 +65,26 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="heading-section">
-                  <h4><em>Food Option</em> </h4>
+                  <nav class = "main-nav">
+                  <h4><em>Food Options</em>              </h4>
+                  <li><form class = "dropdown" action="/filterfor{{location}}" method="post">
+                    <select id="meal" name="meal">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                    <input type="submit" class = "rounded_button" value="return">
+                </form>
+              </li>
+              </nav>
                 </div>
                 <div class="row">
                   <div class="col-lg-3 col-sm-6">
+                    {% for item in items%}
                     <div class="item">
                       <div class="front">
-                        <img src="assets/images/popular-01.jpg" alt="">
-                        <h4>Fortnite<br><span>Sandbox</span></h4>
+                        <img src="../static/images/popular-01.jpg" alt="">
+                        <h4>{{item[1]}}<br><span>Sandbox</span></h4>
                         <ul>
                           <li><i class="fa fa-star"></i> 4.8</li>
                           <li><i class="fa fa-download"></i> 2.3M</li>
@@ -85,10 +97,11 @@
                         </ul>
                       </div>
                     </div>
-                  </div>
+                    {%endfor%}
+                  <!-- </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-02.jpg" alt="">
+                      <img src="../static/images/popular-02.jpg" alt="">
                       <h4>PubG<br><span>Battle S</span></h4>
                       <ul>
                         <li><i class="fa fa-star"></i> 4.8</li>
@@ -98,7 +111,7 @@
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-03.jpg" alt="">
+                      <img src="../static/images/popular-03.jpg" alt="">
                       <h4>Dota2<br><span>Steam-X</span></h4>
                       <ul>
                         <li><i class="fa fa-star"></i> 4.8</li>
@@ -108,7 +121,7 @@
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-04.jpg" alt="">
+                      <img src="../static/images/popular-04.jpg" alt="">
                       <h4>CS-GO<br><span>Legendary</span></h4>
                       <ul>
                         <li><i class="fa fa-star"></i> 4.8</li>
@@ -121,7 +134,7 @@
                       <div class="row">
                         <div class="col-lg-6 col-sm-6">
                           <div class="item inner-item">
-                            <img src="assets/images/popular-05.jpg" alt="">
+                            <img src="../static/images/popular-05.jpg" alt="">
                             <h4>Mini Craft<br><span>Legendary</span></h4>
                             <ul>
                               <li><i class="fa fa-star"></i> 4.8</li>
@@ -131,7 +144,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-6">
                           <div class="item">
-                            <img src="assets/images/popular-06.jpg" alt="">
+                            <img src="../static/images/popular-06.jpg" alt="">
                             <h4>Eagles Fly<br><span>Matrix Games</span></h4>
                             <ul>
                               <li><i class="fa fa-star"></i> 4.8</li>
@@ -144,7 +157,7 @@
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-07.jpg" alt="">
+                      <img src="../static/images/popular-07.jpg" alt="">
                       <h4>Warface<br><span>Max 3D</span></h4>
                       <ul>
                         <li><i class="fa fa-star"></i> 4.8</li>
@@ -154,13 +167,13 @@
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-08.jpg" alt="">
+                      <img src="../static/images/popular-08.jpg" alt="">
                       <h4>Warcraft<br><span>Legend</span></h4>
                       <ul>
                         <li><i class="fa fa-star"></i> 4.8</li>
                         <li><i class="fa fa-download"></i> 2.3M</li>
                       </ul>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -186,5 +199,5 @@
       </div>
     </div>
   </footer>
-
+<script src = "../static/js/dropdown.js"></script>
 {%endblock%}

@@ -123,7 +123,7 @@ Global Styles
 */
 html,
 body {
-  background: hsl(30, 100%, 81%);
+  background: hsl(29, 100%, 90%);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -219,6 +219,7 @@ section {
   font-size: 34px;
   text-decoration: none;
   margin-bottom: 30px;
+  display:inline-flexbox;
 }
 
 .heading-section h4 em {
@@ -439,6 +440,7 @@ Header Style
   z-index: 999;
 }
 
+
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
@@ -450,7 +452,7 @@ Header Style
   font-weight: 400;
   font-size: 20px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #4d4b45;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -704,13 +706,13 @@ Header Style
     background: #fff !important;
     color: #e75e8d!important;
   }
-  .header-area .main-nav .nav li:last-child a img {
+  /* .header-area .main-nav .nav li:last-child a img {
     display: none;
   }
   .header-area .main-nav .nav li:last-child a:hover {
     color: #ec6090 !important;
     background-color: transparent !important;
-  }
+  } */
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
     visibility: inherit;
@@ -761,7 +763,7 @@ Banner Style
 
 .main-banner h6 {
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 400;
   margin-bottom: 25px;
 }
@@ -867,6 +869,36 @@ Food item
   margin-bottom: -53px;
 }
 
+.dropdown {
+    position: relative;
+    font-size: 24px;
+    line-height: normal;
+}
+
+.rounded_button{
+    border-radius: 10px;
+}
+
+.heading-section .main-nav {
+    display: inline-flex;
+    flex-basis: 70%;
+    vertical-align: middle;
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 999;
+  }
+  .heading-section .main-nav li {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+  }
+  
 
 
 /* 

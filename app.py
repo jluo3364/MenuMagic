@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 import sqlite3
 import csv
 import db
@@ -44,7 +44,18 @@ def neilson():
 
 @app.route("/atrium.html")
 def atrium():
-    return render_template("atrium.html")
+    return render_template("atrium.html", location = "Atrium",items = atriumItems)
+
+@app.route('/filterfor<location>', methods=['GET','POST'])
+def itemsForMealAtLocation(location):
+    option = request.form.get('meal')
+    print(option)
+    print(location)
+
+    # Process the option as needed
+    print('Received option:', option)
+    items = filterByMealAndLocation(option, location)
+    return render_template(location+".html", location = location, items = items)
 
 if __name__ == '__main__':
     app.run(debug=True)
