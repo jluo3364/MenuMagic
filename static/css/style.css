@@ -13,7 +13,7 @@ Table of contents
 02. reset
 03. global styles
 04. header
-05. banner
+05. banner 
 06. features
 07. testimonials
 08. contact
@@ -753,13 +753,14 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/atrium.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;
 }
+
 
 .main-banner h6 {
   font-size: 20px;
@@ -776,7 +777,9 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #ffcdcd;
+  font-size: larger;
+  
 }
 
 /* 
@@ -790,6 +793,7 @@ Food item
   padding: 30px;
   background-color: #ff6a00;
   border-radius: 23px;
+  height:fit-content;
 }
 
 .food .item {
@@ -800,8 +804,9 @@ Food item
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.food .item:hover .front {
-  transform: rotateY(180deg);
+.food .item:hover .front img {
+    filter: brightness(0.6);
+    transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
@@ -864,14 +869,13 @@ Food item
   color: #ec6090;
 }
 
-.food .main-button {
+/* .food .main-button {
   text-align: center;
   margin-bottom: -53px;
-}
+} */
 
 .dropdown {
-    position: relative;
-    font-size: 24px;
+    font-size: 17px;
     line-height: normal;
 }
 
@@ -892,13 +896,23 @@ Food item
     transition: all 0.3s ease 0s;
     position: relative;
     z-index: 999;
+    flex-wrap: nowrap;
   }
   .heading-section .main-nav li {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
     display: inline-block;
   }
   
+.fa-star{
+    color: #fff836;
+}
 
-
+.row .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    
+}
 /* 

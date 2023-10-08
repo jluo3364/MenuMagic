@@ -52,7 +52,7 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="header-text">
-                  <h4>Welcome to <em>The Atrium</em></h4>
+                  <h4>Welcome to <br><em>The Atrium</em></h4>br></h4>
                 </div>
               </div>
             </div>
@@ -65,8 +65,9 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="heading-section">
+                  <h4><em>Menu</em>              </h4>
                   <nav class = "main-nav">
-                  <h4><em>Food Options</em>              </h4>
+
                   <li><form class = "dropdown" action="/filterfor{{location}}" method="post">
                     <select id="meal" name="meal">
                         <option value="Breakfast">Breakfast</option>
@@ -76,19 +77,39 @@
                     <input type="submit" class = "rounded_button" value="return">
                 </form>
               </li>
+                 <li><form class = "dropdown" action="/dietaryfilterfor{{location}}" method="post">
+                        <select id="diet" name="diet">
+                            <option value="Gluten Free">Gluten Free</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Lactose Intolerant">Lactose Intolerant</option>
+                        </select>
+                        <input type="submit" class = "rounded_button" value="return">
+                    </form>
+                  </li>
+                  <li><form class = "dropdown" action="/{{location}}schedule" method="post">
+                    <select id="diet" name="diet">
+                        <option value="10/8">10/8</option>
+                        <option value="10/9">10/9</option>
+                        <option value="10/10">10/10</option>
+                        <option value="10/11">10/11</option>
+                        <option value="10/12">10/12</option>
+                    </select>
+                    <input type="submit" class = "rounded_button" value="return">
+                </form>
+              </li>
               </nav>
                 </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
+                
+                  
+                  <div class="grid" style="height: fit-content;">
                     {% for item in items%}
+                    
                     <div class="item">
                       <div class="front">
-                        <img src="../static/images/popular-01.jpg" alt="">
-                        <h4>{{item[1]}}<br><span>Sandbox</span></h4>
-                        <ul>
-                          <li><i class="fa fa-star"></i> 4.8</li>
-                          <li><i class="fa fa-download"></i> 2.3M</li>
-                        </ul>
+                        <img src="../static/images/salmon.jpeg" alt="">
+                        <h4>{{item[1]}}<br><span>calories</span></h4>
+                          <li><i class="fa-star"></i> 4.8</li>
+                          <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
                       </div>
                       <div class="back">
                         <ul>
@@ -174,7 +195,7 @@
                         <li><i class="fa fa-download"></i> 2.3M</li>
                       </ul>
                     </div> -->
-                  </div>
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
