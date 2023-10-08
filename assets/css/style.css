@@ -227,6 +227,10 @@ section {
   text-decoration: underline;
 }
 
+.hidden {
+  display: none;
+}
+
 /* 
 ---------------------------------------------
 Pre-loader Style
@@ -751,7 +755,6 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
@@ -761,7 +764,7 @@ Banner Style
 
 .main-banner h6 {
   font-size: 20px;
-  color: #fff;
+  color: #000000;
   font-weight: 400;
   margin-bottom: 25px;
 }
@@ -770,11 +773,26 @@ Banner Style
   font-size: 45px;
   text-transform: uppercase;
   margin-bottom: 25px;
+  padding: 20px;
+  background-color: #000000b7;
 }
 
 .main-banner h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #ec6060;
+}
+
+.main-banner.atrium{ 
+  background-image: url(../images/atriumimage.jpg)
+}
+.main-banner.busch{ 
+  background-image: url(../images/buschimage.jpg)
+}
+.main-banner.livingston{ 
+  background-image: url(../images/livingstonimage.jpg)
+}
+.main-banner.neilson{ 
+  background-image: url(../images/neilsonimage.jpg)
 }
 
 /* 
@@ -790,83 +808,36 @@ Food item
   border-radius: 23px;
 }
 
-.food .item {
-  background-color: #fba26e;
+
+.food .item{
+  background-color: #ffbb94;
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
+  width: 200px;
+  height: 220px;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.food .item:hover .front {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.food .item .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.food .item .front{
-  padding: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  margin-bottom: 0px;
-}
-
-.food .item img {
+.food .item .front img {
+  pointer-events: none;
   border-radius: 23px;
 }
 
-.food .item h4 {
+.food .item .front h4 {
+  pointer-events: none;
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: inline-block;
 }
 
-.food .item span {
-  color: #666;
-  display: block;
-  margin-top: 7px;
-  font-weight: 400;
-}
-
-.food .item ul {
-  float: right;
+.food .item .back h4 {
+  pointer-events: none;
+  font-size: 15px;
   margin-top: 20px;
+  margin-bottom: 0px;
+  display: inline-block;
 }
-
-.food .item ul li {
-  text-align: right;
-  color: #fff;
-  font-size: 14px;
-}
-
-.food .item ul li:first-child i {
-  color: yellow;
-}
-
-.food .item ul li:last-child i {
-  color: #ec6090;
-}
-
-.food .main-button {
-  text-align: center;
-  margin-bottom: -53px;
-}
-
 
 
 /* 
